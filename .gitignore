@@ -1,0 +1,11 @@
+# backend
+reviewsystembackend/venv/
+reviewsystembackend/__pycache__/
+reviewsystembackend/.env
+reviewsystembackend/**/__pycache__/
+reviewsystembackend/**/*.pyc
+
+# frontend
+reviewsystemui/node_modules/
+reviewsystemui/dist/
+reviewsystemui/.env
