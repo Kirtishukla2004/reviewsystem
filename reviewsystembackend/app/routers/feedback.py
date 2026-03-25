@@ -25,9 +25,9 @@ async def get_feedback(params: FeedbackQueryParams = Depends()):
     )
 
 
-# limiter = Limiter(key_func=get_remote_address)
+limiter = Limiter(key_func=get_remote_address)
 @router.post("/updatereview")
-# @limiter.limit("4/day")
+@limiter.limit("4/day")
 async def update_feedback(request: Request, body: UpdateFeedback):
     service = FeedbackService()
     await service.update_feedback(data=body)
