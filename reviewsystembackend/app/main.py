@@ -16,6 +16,7 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 origins = [
     "https://reviewvibe-app.vercel.app",
     "https://reviewvibe-app.vercel.app",
+    "https://reviewvibe.vercel.app"
 ]
 
 app.add_middleware(
