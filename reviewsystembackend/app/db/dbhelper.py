@@ -12,11 +12,13 @@ class DbHelper:
 
     def _get_connection(self):
         return pymssql.connect(
-            server=self.server,
-            user=self.user,
-            password=self.password,
-            database=self.database
-        )
+        server="sql.bsite.net\\MSSQL2016",
+        user=self.user,
+        password=self.password,
+        database=self.database,
+        tds_version="7.0",
+        conn_properties="Encrypt=False;TrustServerCertificate=True"
+    )
 
     async def execute_sp_async(self, sp_name: str, params: tuple = ()):
         loop = asyncio.get_event_loop()
