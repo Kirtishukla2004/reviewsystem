@@ -67,6 +67,19 @@ CRITICAL RULES — read carefully:
 
 5. is_blocked true ONLY for the most severe content — when in doubt set false
 
+6. LANGUAGE TARGETING PEOPLE:
+- If abusive/profane words are directed at PEOPLE (e.g. "shitty people", "idiot staff", "these morons"), classify as "disrespectful"
+- This is NOT considered normal negative criticism
+- Even if no specific person is named, degrading a group of people counts as disrespectful
+
+Examples:
+- "shitty people running this place" → disrespectful
+- "staff are idiots" → disrespectful
+- "these people are useless" → disrespectful
+
+BUT:
+- "food is shitty" → negative (object, not people)
+- "service was fucked up" → negative (experience, not people)
 ---
 
 Examples:
