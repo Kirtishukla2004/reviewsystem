@@ -14,8 +14,8 @@ app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 origins = [
-    "http://localhost:4173",
-    "http://192.168.15.105:4173",
+    "https://reviewvibe-app.vercel.app",
+    "https://reviewvibe-app.vercel.app",
 ]
 
 app.add_middleware(
@@ -28,6 +28,7 @@ app.add_middleware(
 
 app.include_router(feedback_router)
 app.include_router(categories_router)
+
 
 @app.get("/health")
 def health_check():
